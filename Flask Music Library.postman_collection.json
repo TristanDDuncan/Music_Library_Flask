@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "bea931da-1977-44ce-9023-f121c2bf4e18",
+		"name": "Flask Music Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26274140"
+	},
+	"item": [
+		{
+			"name": "Get Music from Library",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/api/musiclibrarys"
+			},
+			"response": []
+		},
+		{
+			"name": "Add New music",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"title\": \"This The One\",\n        \"genre\": \"Rap\",\n        \"artist\": \"Dave East\",\n        \"album\": \"I Want Love\",\n        \"release_date\": \"2009/18/09\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/musiclibrarys"
+			},
+			"response": []
+		},
+		{
+			"name": "Music by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/api/musiclibrarys/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Music",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:5000/api/musiclibrarys/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Upgrade music",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"title\": \"WATTBA\",\n        \"album\": \"What A time To Be Alive\",\n        \"genre\": \"Rap\",\n        \"artist\": \"Future\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/musiclibrarys/4"
+			},
+			"response": []
+		}
+	]
+}
